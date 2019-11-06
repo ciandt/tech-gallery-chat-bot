@@ -49,4 +49,4 @@ class Skills(Command):
                 )
             )
 
-        return create_cards_response(create_card(rows))
+        return create_cards_response([create_card(rows)])

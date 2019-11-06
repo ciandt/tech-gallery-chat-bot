@@ -11,6 +11,7 @@ class Me(Command):
     command = "me"
     command_aliases = ["/me"]
     description = "Displays who is talking"
+    hidden = True
 
     def handle(self, arguments, **kwargs):
         if "sender" not in kwargs:
