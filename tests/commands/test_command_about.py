@@ -13,7 +13,7 @@ def test_command_about(**mocks):
     About().handle(None)
 
     mocks["create_card_key_value"].assert_has_calls(
-        [call("Version", ANY), call("Source", ANY)]
+        [call("Version", ANY), call("Source", ANY, on_click=ANY)]
     )
 
     mocks["create_cards_response"].assert_called_once()

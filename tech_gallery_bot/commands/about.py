@@ -19,7 +19,9 @@ class About(Command):
             [
                 create_card_key_value("Version", __version__),
                 create_card_key_value(
-                    "Source", "https://github.com/ciandt/tech-gallery-chat-bot"
+                    "Source",
+                    "https://github.com/ciandt/tech-gallery-chat-bot",
+                    on_click="https://github.com/ciandt/tech-gallery-chat-bot",
                 ),
                 create_card_key_value("Created by", "jpimentel@ciandt.com"),
             ]
